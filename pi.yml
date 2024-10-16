@@ -3,9 +3,8 @@
   tasks:
    - name: Ping my hosts
      ansible.builtin.ping:
-
-   
-- name: scripts folder test
+  
+   - name: scripts folder test
       ansible.builtin.file:
         path: ~/scripts2
         state: directory
