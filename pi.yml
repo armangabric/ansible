@@ -3,13 +3,15 @@
   tasks:
    - name: Ping my hosts
      ansible.builtin.ping:
-  
+
+   - name: Print message
+     ansible.builtin.debug:
+     msg: Hello world
+
    - name: scripts folder test
       ansible.builtin.file:
-        path: ~/scripts2
-        state: directory
+      path: ~/scripts2
+      state: directory
 
-        - name: Print message
-     ansible.builtin.debug:
-      msg: Hello world
+   
       
