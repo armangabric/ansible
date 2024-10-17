@@ -1,4 +1,8 @@
-- name: scripts folder test
-  ansible.builtin.file:
-  path: /home/arman/scripts2
-  state: directory
+- name: My first play
+  hosts: pi_servers
+  tasks:
+    
+    - name: scripts folder test
+      ansible.builtin.file:
+      path: /home/arman/scripts2
+      state: directory
