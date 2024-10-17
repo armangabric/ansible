@@ -1,7 +1,4 @@
-- name: My second play
-  hosts: pi_servers
-  tasks:
-  - name: scripts folder test
+- name: scripts folder test
      ansible.builtin.file:
-     path: ~/scripts2
+     path: /home/arman/scripts2
      state: directory
