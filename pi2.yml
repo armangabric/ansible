@@ -12,7 +12,12 @@
         path: ~/scripts2/whatsmyip.sh
         state: touch
         mode: 0777
-          
-          
+
+    - name: clone my init script from gh
+      ansible.builtin.git:
+        repo: https://github.com/armangabric/init.git
+        dest: ~
+        #single_branch: yes
+        #version: master
 
         
