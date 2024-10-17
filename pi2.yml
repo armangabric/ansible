@@ -1,4 +1,4 @@
 - name: scripts folder test
-     ansible.builtin.file:
-     path: /home/arman/scripts2
-     state: directory
+  ansible.builtin.file:
+  path: /home/arman/scripts2
+  state: directory
