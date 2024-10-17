@@ -16,7 +16,7 @@
     - name: clone my init script from gh
       ansible.builtin.git:
         repo: https://github.com/armangabric/init.git
-        dest: ~/scripts2
+        dest: ~/github
         #single_branch: yes
         #version: master
 
