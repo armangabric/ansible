@@ -1,10 +1,7 @@
 - name: My first play
   hosts: pi_servers
   tasks:
-   - name: scripts folder test
-      ansible.builtin.file:
-      path: ~/scripts2
-      state: directory
-
+  - name: Example from an Ansible Playbook
+  ansible.builtin.ping:
    
       
