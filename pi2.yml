@@ -2,7 +2,17 @@
   hosts: pi_servers
   tasks:
     
-    - name: scripts folder test
+    - name: scripts folder in home folder
       ansible.builtin.file:
         path: ~/scripts2
         state: directory
+        
+    - name: scripts folder in home folder
+      ansible.builtin.file:
+        path: ~/scripts2/whatsmyip.sh
+        state: touch
+        mode: 0777
+          
+          
+
+        
