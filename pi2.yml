@@ -22,6 +22,3 @@
 				
 		- name: check public ip
   	ansible.builtin.script: /home/arman/scripts/whatsmyip.sh
-
-				
-        
