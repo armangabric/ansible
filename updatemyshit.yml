@@ -2,6 +2,6 @@
   hosts: pi_servers
   tasks:
   
-  - name: Updates
-  ansible.builtin.apt:
+  - name: Update
+    ansible.builtin.apt:
     state: latest
