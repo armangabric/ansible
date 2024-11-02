@@ -4,4 +4,5 @@
   
 - name: Update
     ansible.builtin.apt:
+      name: "*"
       state: latest
