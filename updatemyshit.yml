@@ -1,5 +1,6 @@
 - name: Update all Debian/Ubuntu packages to their latest version
-hosts: pi_servers
+  hosts: pi_servers
+
 tasks:
   - name: Update
   ansible.builtin.apt:
