@@ -2,7 +2,7 @@
   hosts: pi_servers
 
 tasks:
-  - name: Update
+- name: Update
   ansible.builtin.apt:
   name: "*"
   state: latest
