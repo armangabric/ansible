@@ -1,6 +1,6 @@
 - name: Update all Debian/Ubuntu packages to their latest version
   hosts: pi_servers
-  beome: true
+  become: true
   become_user: root
   tasks:
     
