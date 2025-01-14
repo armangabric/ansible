@@ -1,5 +1,5 @@
 - name: My first play
-  hosts: pi_servers
+  hosts: pi5test
   tasks:
     
     - name: scripts folder in home folder
@@ -20,6 +20,6 @@
         #single_branch: yes
         #version: master
 
-    - name: check public ip
-      ansible.builtin.script: /home/arman/scripts/whatsmyip.sh
+    #- name: check public ip
+    #  ansible.builtin.script: /home/arman/scripts/whatsmyip.sh
 
