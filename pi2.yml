@@ -12,11 +12,11 @@
         path: ~/scripts2/whatsmyip.sh
         state: touch
         mode: 0777
-    -name: add to whatsmyip.sh
-     lineinfile:
-       path:"~/scripts2/whatsmyip.sh"
-       line: curl icanhazip.com
-       insertbefore: BOF
+    - name: add to whatsmyip.sh
+      lineinfile:
+        path: ~/scripts2/whatsmyip.sh
+        line: curl icanhazip.com
+        insertbefore: BOF
 
     - name: clone my init script from gh
       ansible.builtin.git:
