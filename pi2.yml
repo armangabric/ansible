@@ -1,5 +1,5 @@
 - name: My first play
-  hosts: pi5test
+  hosts: New_Devices
   tasks:
     
     - name: scripts folder in home folder
