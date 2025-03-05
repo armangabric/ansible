@@ -16,5 +16,5 @@
         mode: 0775
             
     - name: run it
-      ansible.builtin.script: ~/github/aginit.sh
+      script: ~/github/aginit.sh
       #  cmd: ~/github/aginit.sh
