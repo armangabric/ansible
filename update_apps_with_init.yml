@@ -16,5 +16,5 @@
         mode: 0775
             
     - name: run it
-      script: ~/github/aginit.sh
+      command: sh ~/github/aginit.sh
       #  cmd: ~/github/aginit.sh
