@@ -1,5 +1,5 @@
 - name: Updates servers using aginit.sh
-  hosts: servers
+  hosts: New_Devices
   tasks:
     
     - name: clone my init script from gh
