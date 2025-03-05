@@ -14,4 +14,5 @@
         state: touch
         mode: 0775
             
-      ansible.builtin.script: ~/github/aginit.sh
+      ansible.builtin.script: 
+        cmd: ~/github/aginit.sh
