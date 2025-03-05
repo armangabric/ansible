@@ -9,10 +9,12 @@
         #single_branch: yes
         #version: master
 
+    - name: change perm.
       ansible.builtin.file:
         path: ~/github/aginit.sh
         state: touch
         mode: 0775
             
+    - name: run it
       ansible.builtin.script: 
         cmd: ~/github/aginit.sh
