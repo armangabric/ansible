@@ -1,0 +1,17 @@
+- name: Updates servers using aginit.sh
+  hosts: servers
+  tasks:
+    
+    - name: clone my init script from gh
+      ansible.builtin.git:
+        repo: https://github.com/armangabric/init.git
+        dest: ~/github
+        #single_branch: yes
+        #version: master
+
+      ansible.builtin.file:
+        path: ~/github/aginit.sh
+        state: touch
+        mode: 0775
+            
+      ansible.builtin.script: ~/github/aginit.sh
