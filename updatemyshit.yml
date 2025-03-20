@@ -1,5 +1,5 @@
 - name: Update all Debian/Ubuntu packages to their latest version
-  hosts: pi_servers
+  hosts: servers
   become: true
   become_user: root
   tasks:
