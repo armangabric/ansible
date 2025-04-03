@@ -4,10 +4,7 @@
   become_user: root
   tasks:
   
-      - name: update apt
-        ansible.builtin.apt:
-        update_cache: true
-
       - name: install btop
         ansible.builtin.apt:
         name: btop
+        update_cache: true
