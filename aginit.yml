@@ -3,8 +3,7 @@
   become: true
   become_user: root
   tasks:
-  
       - name: install btop
         ansible.builtin.apt:
-        name: btop
+          name: btop
 #        update_cache: true
