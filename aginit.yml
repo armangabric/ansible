@@ -4,7 +4,7 @@
   become_user: root
   tasks:
   
-    - name: Update repositories cache and install "foo" package
-    ansible.builtin.apt:
-      name: btop
-      update_cache: yes
+      - name: Update repositories cache and install "foo" package
+        ansible.builtin.apt:
+        name: btop
+        update_cache: yes
