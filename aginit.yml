@@ -1,5 +1,5 @@
 - name: install my tools
-  hosts: New_Devices
+  hosts: servers
   become: true
   become_user: root
   tasks:
