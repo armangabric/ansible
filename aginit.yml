@@ -16,7 +16,7 @@
           - nmap
           - speedtest-cli
           - cmatrix
-          - dig
+          - bind9-dnsutils
           - htop
           - iftop
           - asn
