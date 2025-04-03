@@ -5,5 +5,9 @@
   tasks:
       - name: install btop
         ansible.builtin.apt:
-          name: btop
+          #name: btop
+          pkg:
+          - jq
+          - btop
+          
 #        update_cache: true
