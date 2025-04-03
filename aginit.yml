@@ -1,4 +1,4 @@
-- name: Update all Debian/Ubuntu packages to their latest version
+- name: install my tools
   hosts: New_Devices
   become: true
   become_user: root
@@ -9,5 +9,28 @@
           pkg:
           - jq
           - btop
-          
+          - ipcalc
+          - zsh
+          - git
+          - whois
+          - nmap
+          - speedtest-cli
+          - cmatrix
+          - dig
+          - htop
+          - iftop
+          - asn
+          - curl
+          - ncat
+          - bind9-host
+          - grepcidr
+          - aha
+          - mtr-tiny
+          - nethogs
+          - net-tools
+          - duf
+          - nmon
+          - bat
+
+
 #        update_cache: true
