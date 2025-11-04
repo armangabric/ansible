@@ -1,11 +1,10 @@
 - name: install my tools
-  hosts: servers
+  hosts: ubuntu_servers
   become: true
   become_user: root
   tasks:
       - name: install btop
         ansible.builtin.apt:
-          #name: btop
           pkg:
           - jq
           - btop
@@ -31,6 +30,3 @@
           - duf
           - nmon
           - bat
-
-
-#        update_cache: true
