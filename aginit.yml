@@ -3,7 +3,7 @@
   become: true
   become_user: root
   tasks:
-      - name: install btop
+      - name: install_all_my_apps
         ansible.builtin.apt:
           pkg:
           - jq
@@ -30,3 +30,4 @@
           - duf
           - nmon
           - bat
+          - locate
