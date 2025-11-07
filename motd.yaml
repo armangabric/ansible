@@ -1,1 +1,10 @@
-touch /home/arman/scripts/armanmando
+- name: Update static MOTD
+  hosts: all
+  tasks:
+    - name: Copy custom MOTD file
+      ansible.builtin.copy:
+        src: /mnt/omegaryzen_nfs/motd.txt  # Path to your local MOTD file
+        dest: /etc/motd
+        owner: root
+        group: root
+        mode: '0644'
