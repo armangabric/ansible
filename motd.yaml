@@ -1,9 +1,9 @@
 - name: Update static MOTD
-  hosts: all
+  hosts: test_motd
   tasks:
     - name: Copy custom MOTD file
       ansible.builtin.copy:
-        src: /mnt/omegaryzen_nfs/motd.txt  # Path to your local MOTD file
+        remote_src: /mnt/omegaryzen_nfs/motd.txt  # Path to your local MOTD file
         dest: /etc/motd
         owner: root
         group: root
