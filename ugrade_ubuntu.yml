@@ -1,0 +1,12 @@
+- name: Update all Debian/Ubuntu packages to their latest version
+  hosts: ubuntu_servers
+  become: true
+  become_user: root
+  tasks:
+    
+      - name: Update
+        ansible.builtin.apt:
+          update_cache: true
+          cache_valid_time: 3600
+          name: "*"
+          upgrade: true
