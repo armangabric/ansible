@@ -3,17 +3,17 @@
   become: true
   become_user: root
     
-    - name: Install Fastfetch
-      ansible.builtin.package:
-        name: fastfetch
-        state: present
+- name: Install Fastfetch
+  ansible.builtin.package:
+    name: fastfetch
+    state: present
         
-    - name: Create Fastfetch MOTD script
-      ansible.builtin.copy:
-        content: |
-          #!/bin/sh
-          /usr/bin/fastfetch
-        dest: /etc/update-motd.d/99-fastfetch
-        mode: '0755'
-        owner: root
-        group: root
+- name: Create Fastfetch MOTD script
+  ansible.builtin.copy:
+    content: |
+      #!/bin/sh
+      /usr/bin/fastfetch
+      dest: /etc/update-motd.d/99-fastfetch
+      mode: '0755'
+      owner: root
+      group: root
