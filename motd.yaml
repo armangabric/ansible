@@ -3,7 +3,7 @@
   tasks:
     - name: Copy custom MOTD file
       ansible.builtin.copy:
-        remote_src: /mnt/omegaryzen_nfs/motd.txt  # Path to your local MOTD file
+        src: /opt/semaphore/ansible/motd.txt  #local on semaphore LXC container
         dest: /etc/motd
         owner: root
         group: root
