@@ -1,5 +1,7 @@
 - name: Update static MOTD
   hosts: test_motd
+  become: true
+  become_user: root
   tasks:
     - name: Copy custom MOTD file
       ansible.builtin.copy:
