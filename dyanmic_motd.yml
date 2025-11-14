@@ -13,7 +13,7 @@
     content: |
       #!/bin/sh
       /usr/bin/fastfetch
-      dest: /etc/update-motd.d/99-fastfetch
-      mode: '0755'
-      owner: root
-      group: root
+    dest: /etc/update-motd.d/99-fastfetch
+    mode: '0755'
+    owner: root
+    group: root
